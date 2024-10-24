@@ -1,0 +1,85 @@
+.root{
+    -fx-background-color: #f6d5bc;
+}
+.label{
+    -fx-font-size: 18;
+    -fx-font-family: "Calibri Light";
+    -fx-text-fill: #3e0473;
+}
+.button{
+    -fx-font-size: 28;
+    -fx-font-family: "Bodoni MT";
+    -fx-text-fill: #3e0473;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 18;
+    -fx-effect: dropshadow(gaussian, black, 2, 6, 3, 3);
+}
+.button:hover{
+    -fx-background-color: #ffe7e3;
+}
+.button:pressed{
+    -fx-font-size: 24;
+    -fx-text-fill: #380467;
+    -fx-background-color: #f1d5cf;
+    -fx-effect: dropshadow(gaussian, black, 1, 3, 2, 2);
+}
+#clicksLabel{
+    -fx-alignment: center-right;
+}
+#gameCountLabel{
+    -fx-alignment: center;
+    -fx-font-size: 42;
+    -fx-font-family: "Bodoni MT";
+    -fx-text-fill: #3e0473;
+    -fx-effect: dropshadow(gaussian, rgba(87, 81, 80, 0.47), 1, 2, 2, 2);
+}
+#counterLabel{
+    -fx-alignment: center;
+    -fx-font-size: 48;
+    -fx-font-family: "Bodoni MT Black";
+    -fx-text-fill: #3e0473;
+    -fx-effect: dropshadow(gaussian, rgba(87, 81, 80, 0.47), 1, 2, 2, 2);
+}
+#yourClicksLabel{
+    -fx-alignment: center-right;
+}
+#gameName{
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-font-size: 72;
+    -fx-font-family: "Bookman Old Style";
+    -fx-text-fill: #3e0473;
+    -fx-effect: dropshadow(gaussian, rgba(87, 81, 80, 0.47), 1, 2, 2, 2);
+
+}
+#menuImage{
+    -fx-effect: dropshadow(gaussian, rgba(87, 81, 80, 0.47), 1, 2, 2, 2);
+}
+#pricesAndNames{
+    -fx-alignment: center;
+}
+#progressBar{
+    -fx-background-radius: 8;
+}
+#progressBar > .track {
+    -fx-background-radius: 8;
+    -fx-text-box-border: #b27856;
+    -fx-control-inner-background: #f8ede7;
+}
+#progressBar > .bar {
+    -fx-background-radius: 8;
+    -fx-background-color: #3e0473;
+}
+#percentage{
+    -fx-alignment: center;
+    -fx-font-size: 16;
+    -fx-font-family: "Agency FB";
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.74), 1, 1, 1.75, 1.75);
+}
+#doneLabel{
+    -fx-alignment: center;
+    -fx-font-size: 22;
+    -fx-font-family: "Bookman Old Style";
+    -fx-text-fill: #3e0473;
+}

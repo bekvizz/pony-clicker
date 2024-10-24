@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="528.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bekvizz.ponyclicker.CoinswitchController">
+   <children>
+      <Button layoutX="105.0" layoutY="587.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="69.0" prefWidth="318.0" text="Back to menu" />
+      <Label layoutX="15.0" layoutY="14.0" prefHeight="22.0" prefWidth="274.0" text="Select your coin skin by clicking on it!" />
+      <Label alignment="CENTER" layoutX="15.0" layoutY="68.0" prefHeight="30.0" prefWidth="141.0" text="Rivibaes (default)" />
+      <ImageView fx:id="defaultCoin" fitHeight="150.0" fitWidth="200.0" layoutX="15.0" layoutY="130.0" onMousePressed="#getDefaultInfo" onMouseReleased="#switchCoinSkin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@coins/default/coin-click-0.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="luckyCoin" fitHeight="150.0" fitWidth="200.0" layoutX="198.0" layoutY="130.0" onMousePressed="#getLuckyInfo" onMouseReleased="#switchCoinSkin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@coins/lucky-roll/coin-click-0.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="15.0" layoutY="102.0" prefHeight="30.0" prefWidth="141.0" text="Cost: 0" />
+      <Label alignment="CENTER" layoutX="196.0" layoutY="68.0" prefHeight="30.0" prefWidth="137.0" text="Lucky Roll" />
+      <Label alignment="CENTER" layoutX="196.0" layoutY="102.0" prefHeight="30.0" prefWidth="137.0" text="Cost: 100" />
+      <ImageView fx:id="cozyGlowCoin" fitHeight="150.0" fitWidth="200.0" layoutX="361.0" layoutY="130.0" onMousePressed="#getCozyGlowInfo" onMouseReleased="#switchCoinSkin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@coins/cozy-glow/coin-click-0.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="374.0" layoutY="68.0" prefHeight="30.0" prefWidth="137.0" text="Luna n Celestia" />
+      <Label alignment="CENTER" layoutX="374.0" layoutY="102.0" prefHeight="30.0" prefWidth="137.0" text="Cost: 500" />
+      <Label fx:id="selectLabelDefault" layoutX="15.0" layoutY="289.0" prefHeight="30.0" prefWidth="141.0" />
+      <Label fx:id="selectLabelLucky" layoutX="196.0" layoutY="289.0" prefHeight="30.0" prefWidth="141.0" />
+      <Label fx:id="selectLabelCozyGlow" layoutX="361.0" layoutY="289.0" prefHeight="30.0" prefWidth="141.0" />
+      <Label fx:id="clicksLabel" layoutX="287.0" layoutY="14.0" prefHeight="22.0" prefWidth="227.0" text="Your clicks: " />
+   </children>
+   <cursor>
+      <Cursor fx:constant="NONE" />
+   </cursor>
+</AnchorPane>
