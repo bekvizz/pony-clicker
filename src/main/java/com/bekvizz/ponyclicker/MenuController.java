@@ -31,7 +31,7 @@ public class MenuController {
     private Button playButton;
     @FXML
     private Button exitButton;
-    private StringBuilder secretCode = new StringBuilder();
+    private final StringBuilder secretCode = new StringBuilder();
     private Image cursorImage = new Image(getClass().getResourceAsStream("cursors/Twilight-cursor.png"));
 
     public void setCursorImage(Image cursorImage) {
@@ -113,12 +113,12 @@ public class MenuController {
 
     public void secretClicks(KeyEvent event) {
         secretCode.append(event.getCharacter());
-        if (secretCode.toString().equals("m")
-                || secretCode.toString().equals("ma")
-                || secretCode.toString().equals("mag")
-                || secretCode.toString().equals("magi")
-                || secretCode.toString().equals("magic")) {
-            if (secretCode.toString().equals("magic")) {
+        if (secretCode.toString().equalsIgnoreCase("m")
+                || secretCode.toString().equalsIgnoreCase("ma")
+                || secretCode.toString().equalsIgnoreCase("mag")
+                || secretCode.toString().equalsIgnoreCase("magi")
+                || secretCode.toString().equalsIgnoreCase("magic")) {
+            if (secretCode.toString().equalsIgnoreCase("magic")) {
                 countOfClicks += 500;
                 Image img = new Image(getClass().getResourceAsStream("cursors/Chrysalis-cursor.png"));
                 scenePane.setCursor(new ImageCursor(img));

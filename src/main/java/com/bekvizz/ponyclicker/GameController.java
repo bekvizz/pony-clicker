@@ -42,7 +42,7 @@ public class GameController {
         this.progressBar.setProgress((double) countOfClicks / 1000);
         if (countOfClicks >= 1000) {
             doneLabel.setText("YAY! YOU'VE DONE!!!");
-            percentage.setText("100%");
+            percentage.setText(countOfClicks / 10 + "%");
         } else {
             percentage.setText(countOfClicks / 10 + "%");
         }
@@ -72,16 +72,11 @@ public class GameController {
 
         if (countOfClicks >= 1000) {
             doneLabel.setText("YAY! YOU'VE DONE!!!");
-            percentage.setText("100%");
+            percentage.setText(countOfClicks / 10 + "%");
         } else {
             percentage.setText(countOfClicks / 10 + "%");
         }
 
-    }
-
-    public void switchCoin(Image newCoinPressed, Image newCoinStill) {
-        coinPressed = newCoinPressed;
-        coinStill = newCoinStill;
     }
 
     public void coinAnimation(MouseEvent mouseEvent) {

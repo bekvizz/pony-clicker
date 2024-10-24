@@ -6,7 +6,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#secretClicks" prefHeight="670.0" prefWidth="528.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bekvizz.ponyclicker.MenuController">
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#secretClicks" prefHeight="670.0" prefWidth="528.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bekvizz.ponyclicker.MenuController">
    <children>
       <ImageView fx:id="menuImage" fitHeight="347.0" fitWidth="347.0" layoutX="105.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -15,8 +15,8 @@
       <Label fx:id="gameName" layoutX="105.0" layoutY="14.0" prefHeight="217.0" prefWidth="318.0" text="Pony&#10;Clicker" />
       <Button fx:id="playButton" layoutX="105.0" layoutY="323.0" mnemonicParsing="false" onAction="#switchToGame" prefHeight="69.0" prefWidth="318.0" text="Play" />
       <Button layoutX="105.0" layoutY="242.0" mnemonicParsing="false" onAction="#switchToCoinswitch" prefHeight="69.0" prefWidth="318.0" text="Switch Coin" />
-      <Label fx:id="yourClicksLabel" layoutX="281.0" layoutY="648.0" prefHeight="22.0" prefWidth="244.0" text="Your clicks:  0" />
-      <Label layoutX="2.0" layoutY="648.0" prefHeight="22.0" prefWidth="118.0" text="ver: 1.0-r" />
-      <Button fx:id="exitButton" layoutX="423.0" layoutY="591.0" mnemonicParsing="false" onAction="#exit" prefHeight="36.0" prefWidth="96.0" text="Exit" />
+      <Label fx:id="yourClicksLabel" layoutX="283.0" layoutY="646.0" prefHeight="25.0" prefWidth="239.0" text="Your clicks:  0" />
+      <Label layoutX="5.0" layoutY="646.0" prefHeight="25.0" prefWidth="107.0" text="ver: 1.0.1-r" />
+      <Button fx:id="exitButton" layoutX="421.0" layoutY="585.0" mnemonicParsing="false" onAction="#exit" prefHeight="36.0" prefWidth="96.0" text="Exit" />
    </children>
 </AnchorPane>
