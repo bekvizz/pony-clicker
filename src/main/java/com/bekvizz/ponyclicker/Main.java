@@ -2,12 +2,14 @@ package com.bekvizz.ponyclicker;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.ImageCursor;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.stage.Modality;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -25,9 +27,16 @@ public class Main extends Application {
         stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.show();
+        setCenterOnScreen(stage);
     }
 
     public static void main(String[] args) {
         launch();
+    }
+
+    public void setCenterOnScreen(Stage stage) {
+        Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds();
+        stage.setX((screenBounds.getWidth() - stage.getWidth()) / 2);
+        stage.setY((screenBounds.getHeight() - stage.getHeight()) / 2);
     }
 }
